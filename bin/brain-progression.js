@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 
 import { startGame } from '../src/cli.js';
-import { playRound, question } from '../src/games/brain-progression.js';
+import {
+  playRoundProgression,
+  questionProgression,
+} from '../src/games/brain-progression.js';
 
-startGame(playRound, question);
+startGame(playRoundProgression, questionProgression);
