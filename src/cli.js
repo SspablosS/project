@@ -4,7 +4,7 @@ const greeting = (name) => {
   console.log(`Hello, ${name}!`);
 };
 
-const randNum = (maxNum) => Math.floor(Math.random() * maxNum);
+const randNum = (maxNum) => Math.floor(Math.random() * maxNum) + 1;
 
 const askName = () => readlineSync.question('May I have your name? ');
 
