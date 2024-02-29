@@ -10,13 +10,13 @@ const gamesMenu = () => {
   console.log('Welcome to the Brain Games!');
   greeting(askName());
 
-  const selectedGame = readlineSync
-    .question('Выберите игру:\n[1] Brain-Scm\n[2] Brain-progression\n')
-    .toLowerCase();
-  if (selectedGame === '1') {
+  const selectedGame = readlineSync.questionInt(
+    'Выберите игру:\n[1] Brain-Scm\n[2] Brain-progression\n'
+  );
+  if (selectedGame === 1) {
     startGame(playRoundScm, questionScm);
   }
-  if (selectedGame === '2') {
+  if (selectedGame === 2) {
     startGame(playRoundProgression, questionProgression);
   }
 };
