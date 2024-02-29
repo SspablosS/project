@@ -9,6 +9,10 @@
   "author": "pablo",
   "license": "ISC",
   "type": "module",
+  "bin": {
+    "menu-game": "bin/menu-game.js",
+    "brain-scm": "bin/brain-scm.js"
+  },
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
